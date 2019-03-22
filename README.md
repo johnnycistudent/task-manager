@@ -29,4 +29,12 @@ if __name__ == '__main__':
   * sudo pip3 freeze --local > requirements.txt
   * then git commit again
   * then push to heroku "git push heroku master"
+  * Next, add a procfile:
+  * echo web: python app.py > Procfile
+  * Git commit "added Procfile" and push to heroku again
+  * Next we want to run our application, enter the following into bash:
+  * heroku ps:scale web=1
+  * Dynos are scaled with this command
+  * go to heroku and go to settings, and reveal and config vVars
+  * Enter IP and set value to 0.0.0.0   Enter PORT as the next key and enter 5000 as key
     
