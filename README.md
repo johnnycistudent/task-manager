@@ -1,7 +1,7 @@
 # Mini Project
 
   * install Flask 
-    sudo pip install flask
+    sudo pip3 install flask
     
   * Basic python needed:
     import os
