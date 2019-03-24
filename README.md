@@ -37,4 +37,11 @@ if __name__ == '__main__':
   * Dynos are scaled with this command
   * go to heroku and go to settings, and reveal and config vVars
   * Enter IP and set value to 0.0.0.0   Enter PORT as the next key and enter 5000 as key
-    
+  * To get Flask talking to Mongo, we need to install a 3rd party library called flask-pymongo:
+  * sudo pip3 install flask-pymongo
+  * Also need to install the dnspython:
+  * sudo pip3 install dnspython
+  * add imports to top of file:
+  * from flask_pymongo import PyMongo
+    from bson.objectid import ObjectId
+  * mongo stores info in the bson library
