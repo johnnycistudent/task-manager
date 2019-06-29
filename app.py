@@ -20,8 +20,7 @@ def get_tasks():
 @app.route('/add_task')
 
 def add_task():
-    return render_template('addtask.html',
-    categories=mongo.db.categories.find())
+    return render_template('addtask.html', categories=mongo.db.categories.find())
     
 @app.route('/insert_task', methods=["POST"])
 def insert_task():
